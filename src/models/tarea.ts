@@ -7,10 +7,6 @@ const taskSchema = new mongoose.Schema({
     descripcion: {
         type: String
     },
-    proyecto: {
-        type: Schema.Types.ObjectId,
-        ref: "Proyecto"
-    },
     createdBy: {
         type: String
     },
