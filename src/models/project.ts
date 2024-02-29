@@ -7,6 +7,12 @@ const projectSchema = new mongoose.Schema({
     createdBy: {
         type: String
     },
+    updatedBy: {
+        type: String
+    },
+    deletedBy: {
+        type: String
+    },
 });
 
-export default mongoose.model('Tarea', projectSchema);
+export default mongoose.model('Proyecto', projectSchema);
