@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
 
 const taskSchema = new mongoose.Schema({
-    nombre: {
+    name: {
         type: String
     },
-    descripcion: {
+    description: {
         type: String
     },
     createdBy: {
@@ -18,4 +18,4 @@ const taskSchema = new mongoose.Schema({
     }
 });
 
-export default mongoose.model('Tarea', taskSchema);
+export default mongoose.model('Task', taskSchema);

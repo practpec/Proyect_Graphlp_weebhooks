@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const projectSchema = new mongoose.Schema({
-    nombre: {
+    name: {
         type: String
     },
     createdBy: {
@@ -15,4 +15,4 @@ const projectSchema = new mongoose.Schema({
     },
 });
 
-export default mongoose.model('Proyecto', projectSchema);
+export default mongoose.model('Project', projectSchema);

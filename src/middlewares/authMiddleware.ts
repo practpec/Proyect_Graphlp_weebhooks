@@ -6,7 +6,7 @@ export interface AuthenticatedRequest extends Request {
     user?: UserDocument;
 }
 
-export const authenticate = async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
+export const verifyToken = async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
     const jwtSecret = process.env.JWT_SECRET || '';
     const token = req.headers.authorization?.split(' ')[1] || '';
     try {
